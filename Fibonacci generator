@@ -1,0 +1,18 @@
+def fibo(n):
+#This function generates  the fibonacci series
+    # checks if n is equal to 0
+    # then  it will return 0
+    if n==0:
+        return 0;
+    # checks if n is equal to 1
+    # then it will return 1
+    elif n==1:
+        return 1;
+    else:
+        return fibo(n-2)+fibo(n-1)
+# Get input from the user
+n=int(input("enter number : "))
+for i in range(n+1):
+    f=fibo(i)
+    # print sequence of numbers
+    print(f)
